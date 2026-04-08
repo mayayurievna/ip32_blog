@@ -4,7 +4,7 @@ from .forms import UserForm
 
 def users(request):
     users = User.objects.all()
-    return render(request, 'user.html', {'users': users})
+    return render(request, 'users.html', {'users': users})
 
 def add_user(request):
     if request.method == "POST":
